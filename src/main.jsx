@@ -12,6 +12,7 @@ import { Home } from './Pages/Home/Home';
 import { Demo } from './Pages/Demo/Demo';
 import { Demo2 } from './Pages/Demo/Demo2';
 import { MainLayout } from './Layout/MainLayout';
+import { AddMedicine } from './Pages/AddMedicine/AddMedicine';
 
 
 
@@ -21,13 +22,11 @@ const router = createBrowserRouter([
     path: "/",
     element:<MainLayout/>,
     children:[
+    
       {
-    index:true, // this is the default route 
- element:<Home/>,
-      },
-      {
-        path:"/test",
-        element:<Demo></Demo>
+        index:true,
+        path:"/addmedicine",
+        element:<AddMedicine/>
       },
       {
         path:"/demo2",

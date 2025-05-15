@@ -32,11 +32,14 @@ export const Drawer = () => {
     <ul className="menu bg-[#272727] text-white text-base-content min-h-full w-80 p-4 pt-12">
       {/* Sidebar content here */}
       <li>
-        <Link to='/test'>Sideabar 1</Link>
+        <Link to='/addmedicine'>Add Medicine</Link>
       </li>
       <li><a>Sidebar Item 2</a></li>
       <li>
         <Link to='/test'>Sign Out</Link>
+      </li>
+      <li>
+        <Link to='/demo2'>Demo</Link>
       </li>
     </ul>
   </div>

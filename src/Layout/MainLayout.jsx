@@ -5,9 +5,13 @@ import { Drawer } from "../Component/Drawer"
 
 export const MainLayout = () => {
   return (
-    <div>
-    <Drawer/>
-    <Outlet/>
+    <div className="flex flex-row">
+   <div className="w-1/4">
+     <Drawer/>
+   </div>
+<div className="w-3/4 ">
+      <Outlet/>
+</div>
 
     </div>
   )

@@ -15,10 +15,16 @@ export const Demo2 = () => {
         Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
         quasi. In deleniti eaque aut repudiandae et a id nisi.
       </p>
+      <fieldset className="fieldset">
+  <legend className="fieldset-legend">What is your name?</legend>
+  <input type="text" className="input" placeholder="Type here" />
+  <p className="label">Optional</p>
+</fieldset>
       <button className="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>
+
     </div>
   )
 }
