@@ -2,6 +2,9 @@ import React from 'react'
 
 export const SignIn = () => {
   return (
-    <div>SignIn</div>
+    <div>
+      
+   <h1 className="5xl">SignIn</h1>
+   </div>
   )
 }

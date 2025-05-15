@@ -2,6 +2,7 @@ import { IoEye } from "react-icons/io5"
 import "../../App.css"
 import { DoctorProfile } from "../../Component/DoctorProfile"
 import { useState } from "react";
+import { Link } from "react-router";
 
 export const PatientAllRecords = () => {
     const patients = [
@@ -125,10 +126,13 @@ const handleFilter = () => {
         <td>{patient.name}</td>
         <td>{patient. phone}</td>
          <td className="">
-            <button className="btn flex items-center justify-center
+            <Link to={`/patientrecords/${patient.patientId}`}>
+                <button className="btn flex items-center justify-center
              text-white bg-blue-500">
                 <span>View</span>
                  <span><IoEye/></span></button>
+            </Link>
+        
         </td> 
        <td className="">
             <button className="btn flex items-center justify-center text-white bg-green-700">

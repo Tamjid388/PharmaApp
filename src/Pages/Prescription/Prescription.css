@@ -1,0 +1,65 @@
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #fff;
+        }
+        p{
+            font-size: 14px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #000;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        .content {
+            display: flex;
+            margin-top: 20px;
+        }
+        .left-sidebar {
+            width: 30%;
+            padding-right: 20px;
+            border-right: 1px solid #d5d5d5;
+        }
+        .right-content {
+            width: 70%;
+            padding-left: 20px;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        .section h3{
+            font-size: 16px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+/*            border: 1px solid #000;*/
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .print-btn {
+            margin-top: 20px;
+            text-align: center;
+        }
+        @media print {
+            .print-btn { display: none; }
+        }
