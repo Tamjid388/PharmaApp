@@ -7,7 +7,7 @@ import { FaPrescription } from 'react-icons/fa'
 export const PrescriptionPdf = () => {
    
   return (
-    <div className='max-w-6xl mx-auto  mt-4'>
+    <div className='max-w-5xl mx-auto  mt-4 border border-gray-300 '>
 <div>
   <img className='h-[192px] w-full p-4 ' src={header} alt="" />
 </div>
@@ -104,7 +104,8 @@ export const PrescriptionPdf = () => {
 </div>
    <div className='= flex justify-center'>
                             <Link >
-                                <button  onClick={() => window.print()} className='btn text-white bg-red-700 hover:bg-blue-600'>Print</button>
+                                <button  onClick={() => window.print()}
+                                 className='btn text-white mb-2 bg-red-700 hover:bg-blue-600'>Print</button>
                             </Link>
                         </div>
     </div>

@@ -135,9 +135,12 @@ const handleFilter = () => {
         
         </td> 
        <td className="">
-            <button className="btn flex items-center justify-center text-white bg-green-700">
+        <Link  to={'/prescriptionPdf'}>
+          <button className="btn flex items-center justify-center text-white bg-green-700">
                 <span>View</span>
                  <span><IoEye/></span></button>
+        </Link>
+          
         </td> 
       </tr>)
 }

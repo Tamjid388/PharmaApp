@@ -75,10 +75,11 @@ patientRecords.filter(patient=> parseInt(patient.patientId)===parseInt(patientId
         <div className="container">
             <DoctorProfile/>
 
-
+ <h1 className="font-semibold text-2xl mb-4">
+                Patient  Records</h1>
                    {/* Table */}
             
-                            <div className="overflow-x-auto mt-3">
+                            <div className="overflow-x-auto mt-3 border border-gray-200">
               <table className="table table-zebra table-bordered">
                 {/* head */}
                 <thead>
@@ -102,11 +103,14 @@ patientRecords.filter(patient=> parseInt(patient.patientId)===parseInt(patientId
                     <td>{patient.name}</td>
                     <td>{patient. phone}</td>
                      <td className="">
-                    
-                            <button className="btn flex items-center justify-center
-                         text-white bg-blue-500">
+                    <Link to={'/patientReports'}>
+                     <button className="btn flex items-center justify-center
+                         text-white bg-[#272727]">
                             <span>View</span>
-                             <span><IoEye/></span></button>
+                             <span><IoEye/></span>
+                             </button>
+                    </Link>
+                           
                        
                     
                     </td> 
