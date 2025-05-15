@@ -34,12 +34,13 @@ export const Drawer = () => {
       <li>
         <Link to='/addmedicine'>Add Medicine</Link>
       </li>
-      <li><a>Sidebar Item 2</a></li>
+   
+     
       <li>
-        <Link to='/test'>Sign Out</Link>
+        <Link to='/patientallrecords'>Patient All Records </Link>
       </li>
-      <li>
-        <Link to='/demo2'>Demo</Link>
+       <li>
+        <Link to='/test'>Sign Out</Link>
       </li>
     </ul>
   </div>

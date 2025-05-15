@@ -13,6 +13,7 @@ import { Demo } from './Pages/Demo/Demo';
 import { Demo2 } from './Pages/Demo/Demo2';
 import { MainLayout } from './Layout/MainLayout';
 import { AddMedicine } from './Pages/AddMedicine/AddMedicine';
+import { PatientAllRecords } from './Pages/PatientALLRecords/PatientAllRecords';
 
 
 
@@ -29,8 +30,8 @@ const router = createBrowserRouter([
         element:<AddMedicine/>
       },
       {
-        path:"/demo2",
-        element:<Demo2/>
+        path:"/patientallrecords",
+        element:<PatientAllRecords/>
       }
     ]
   },{

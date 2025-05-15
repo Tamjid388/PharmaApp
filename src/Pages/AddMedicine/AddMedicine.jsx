@@ -3,6 +3,7 @@ import "../../App.css"
 import doctorImage from "../../assets/images/dr.png"
 import { FiPlus } from "react-icons/fi"
 import { useState } from "react"
+import { DoctorProfile } from "../../Component/DoctorProfile"
 
 
 export const AddMedicine = () => {
@@ -10,7 +11,7 @@ export const AddMedicine = () => {
   return (
     <div>
     <div className=' container '>
-      <div className=" header">
+      {/* <div className=" header">
        
   <div class="profile-section">
         <img className="dr-profile" src={doctorImage}/>
@@ -24,7 +25,8 @@ export const AddMedicine = () => {
 
       
 
-      </div>
+      </div> */}
+      <DoctorProfile/>
 <div className="max-w-2xl mx-auto  flex flex-col shadow-lg min-h-[200px] px-3 py-4">
   <label className="font-semibold mb-2">
     Please Add Medicine Name
