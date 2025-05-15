@@ -16,6 +16,7 @@ import { AddMedicine } from './Pages/AddMedicine/AddMedicine';
 import { PatientAllRecords } from './Pages/PatientALLRecords/PatientAllRecords';
 import { PatientRecords } from './Pages/PatientRecords/PatientRecords';
 import { Prescription } from './Pages/Prescription/Prescription';
+import { PrescriptionPdf } from './Pages/PrescriptionPdf/PrescriptionPdf';
 
 
 
@@ -38,7 +39,8 @@ const router = createBrowserRouter([
       {
         path:"/patientrecords/:patientId",
         element:<PatientRecords/>
-      },{
+      },
+      {
         path:"/patientPrescription",
         element:<Prescription/>
     }
@@ -49,6 +51,10 @@ const router = createBrowserRouter([
     path:"/signin",
     element:<SignIn/>
   },
+  {
+    path:'/prescriptionPdf',
+    element:<PrescriptionPdf/>
+  }
 
   
 ]);

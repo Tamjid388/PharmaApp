@@ -1,54 +1,56 @@
 
-import { FaPrescription } from 'react-icons/fa'
-import { DoctorProfile } from '../../Component/DoctorProfile'
+import header from "../../assets/images/reports/header.jpg"
+import footer from "../../assets/images/reports/footer.jpg"
 import { Link } from 'react-router'
+import { FaPrescription } from 'react-icons/fa'
 
-
-export const Prescription = () => {
-    const icon = "https://cdn-icons-png.flaticon.com/512/1455/1455597.png"
-    return (
-        <div>
-            <div className='container'>
-                <DoctorProfile />
-
-                <div>
-
-                </div>
-                <div className='flex gap-4'>
+export const PrescriptionPdf = () => {
+   
+  return (
+    <div className='max-w-6xl mx-auto  mt-4'>
+<div>
+  <img className='h-[192px] w-full p-4 ' src={header} alt="" />
+</div>
+{/* Body */}
+     <div className='flex gap-4 flex-col md:flex-row'>
                     {/*  */}
-                    <aside className='w-2/5 shadow-md p-4 rounded-lg space-y-7'>
+                    <aside className='w-2/5  p-4 rounded-lg space-y-7'>
                         <div className=''>
                             <h3 className='font-semibold text-gray-800 text-lg mb-1'>Symptoms:</h3>
-                            <ul className='list-decimal list-inside 
-                    border border-gray-200 rounded-md
-                     p-3 mb-3'>
-                                <li>Fatigue</li>
-                                <li>Headaches</li>
-                                <li>Joint pain</li>
-                            </ul>
+                         
+                              <div className='
+                          
+                      mb-3'>
+                        <p> Fatigue,Headaches,Joint pain</p>
+                               
+                                
+                            </div>
 
                         </div>
                         <div >
                             <h3 className='font-semibold text-gray-800 text-lg mb-1'>Tests:</h3>
 
-                            <ul className='list-decimal list-inside border border-gray-200 rounded-md
-                     p-3 mb-3'>
-                                <li>TSH</li>
-                                <li>CBC</li>
-                                <li> Urine</li>
-                            </ul>
+                            <div className='
+                          
+                      mb-3'>
+                        <p> TSH,CBC,Urine</p>
+                               
+                                
+                            </div>
                         </div>
                         <div >
                             <h3 className='font-semibold text-gray-800 text-lg mb-1'>Advice:</h3>
-                            <p className='border border-gray-200 rounded-md
-                     p-3 mb-3'>Maintain a balanced
+                            <p className=' 
+                     mb-3'>Maintain a balanced
                                 lifestyle by eating nutritious foods,
-                                exercising regularly, managing stress properly, and following medical guidance to ensure long-term health and well-being.</p>
+                                exercising regularly.
+                               
+                                 </p>
                         </div>
                     </aside>
                     {/*  */}
-                    <div className='border border-gray-200 w-full
-                     p-4 shadow-md rounded-lg space-y-6'>
+                    <div className='border-l border-gray-200 w-full
+                     p-4  space-y-6'>
                         <div className='text-center'>
                             <p><strong>Patient Id:</strong> 987654 | <strong>Pr No:</strong> 123456</p>
                         </div>
@@ -59,9 +61,9 @@ export const Prescription = () => {
                             <p><strong>Date:</strong> 08 Feb 2025</p>
                         </div>
 
-                        <div className='flex items-center px-4'>
-                            <img className='w-5 h-5' src={icon} alt={'rx-icon'} />
-                            <FaPrescription />
+                        <div className=' px-4'>
+                           
+                            <FaPrescription className='text-2xl text-green-700' />
                         </div>
 
                         <div className="overflow-x-auto">
@@ -76,7 +78,7 @@ export const Prescription = () => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {Array.from({ length: 8 }).map((_, index) => (
+                                    {Array.from({ length: 6 }).map((_, index) => (
                                         <tr key={index}>
                                             <td>Paracetamol 500mg</td>
                                             <td>1 + 0 + 1</td>
@@ -89,17 +91,22 @@ export const Prescription = () => {
                                 </tbody>
                             </table>
                         </div>
-                        <div className='= flex justify-center'>
-                            <Link to={'/prescriptionPdf'}>
-                                <button className='btn btn-neutral hover:bg-blue-600'>Print</button>
-                            </Link>
-                        </div>
+                     
                     </div>
 
 
                 </div>
 
-            </div>
-        </div>
-    )
+
+{/* Footer */}
+<div>
+  <img className='h-[125px]  w-full p-4 ' src={footer} alt="" />
+</div>
+   <div className='= flex justify-center'>
+                            <Link >
+                                <button  onClick={() => window.print()} className='btn text-white bg-red-700 hover:bg-blue-600'>Print</button>
+                            </Link>
+                        </div>
+    </div>
+  )
 }
