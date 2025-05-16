@@ -21,6 +21,7 @@ export const PatientReports = () => {
     ];
   return (
     <div className='container'>
+       <title> Patient  Reports</title>
         <DoctorProfile/>
 
         <div>

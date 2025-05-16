@@ -57,6 +57,7 @@ const handleFilter = () => {
 
   return (
     <div>
+        <title>    Patient All Records</title>
         <div className="container">
             <DoctorProfile/>
 

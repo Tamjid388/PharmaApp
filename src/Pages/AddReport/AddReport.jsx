@@ -3,6 +3,7 @@ import '../../App.css'
 export const AddReport = () => {
   return (
     <div>
+       <title>Add Report</title>
       <div className='container'>
         <div class="header text-center flex flex-col md:flex-row gap-4 
       ">

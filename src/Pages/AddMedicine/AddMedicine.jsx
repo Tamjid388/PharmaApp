@@ -28,6 +28,7 @@ export const AddMedicine = () => {
   };
   return (
     <div>
+        <title> Add Medicine</title>
       <div className=' container '>
 
         <DoctorProfile />

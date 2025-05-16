@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 export const SignIn = () => {
   return (
     <div className="Auth-body ">
+        <title>Sign In</title>
       
       <div className="animated-background">
         <div className="gradient-sphere sphere-1"></div>

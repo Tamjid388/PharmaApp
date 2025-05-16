@@ -72,6 +72,7 @@ patientRecords.filter(patient=> parseInt(patient.patientId)===parseInt(patientId
 
   return (
     <div>
+          <title>  Patient  Records</title>
         <div className="container">
             <DoctorProfile/>
 
