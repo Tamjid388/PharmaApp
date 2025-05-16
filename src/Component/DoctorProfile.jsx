@@ -3,7 +3,7 @@ import "../App.css"
 import doctorImage from "../assets/images/dr.png"
 export const DoctorProfile = () => {
   return (
-        <div className=" header">
+        <div className=" header flex flex-col md:flex-row gap-4 mx-2">
        
   <div className="profile-section">
         <img className="dr-profile" src={doctorImage}/>

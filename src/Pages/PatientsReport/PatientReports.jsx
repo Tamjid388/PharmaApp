@@ -31,12 +31,12 @@ export const PatientReports = () => {
                   <LightGallery
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
-          elementClassNames="grid grid-cols-1 md:grid-cols-4 gap-8"
+          elementClassNames="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
       >
         {images.map((img, index) => (
           <a href={img.src} key={index}>
-            <img  src={img.src} alt={img.alt} 
-            className="w-full rounded shadow h-[300px] hover:shadow-2xl " />
+            <img   src={img.src} alt={img.alt} 
+            className="w-full object-contain rounded shadow h-[300px] hover:shadow-2xl " />
           <p className='text-center font-semibold underline py-2'> {img.name}</p>
           </a>
         ))}

@@ -62,10 +62,10 @@ const handleFilter = () => {
 
 
             <div className="">
-              <h1 className="font-semibold text-2xl mb-4">
+              <h1 className="font-semibold text-2xl mb-4 px-2 ">
                 Patient All Records</h1>
 
-                <form  className="grid grid-cols-6 items-center gap-8">
+                <form  className="grid px-2 md:grid-cols-6 items-center gap-8">
                   {/* Patient ID */}
                     <input type="text" 
                     placeholder="Patient ID"
@@ -102,7 +102,7 @@ const handleFilter = () => {
 
                 {/* Table */}
 
-                <div className="overflow-x-auto mt-3">
+                <div className="overflow-x-auto mt-3  ">
   <table className="table table-zebra table-bordered">
     {/* head */}
     <thead>

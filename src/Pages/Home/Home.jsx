@@ -57,9 +57,9 @@ export const Home = () => {
       <div className='container'>
         <DoctorProfile />
 
-        <div className='flex gap-4'>
+        <div className='flex gap-4 flex-col md:flex-row'>
           {/*  */}
-          <aside className='w-2/5 shadow-md p-4 rounded-lg space-y-7'>
+          <aside className='md:w-2/5 shadow-md p-4 rounded-lg space-y-7'>
             <div className=''>
               <h3 className='font-semibold text-gray-800 text-lg mb-1'>Symptoms:</h3>
 
@@ -109,7 +109,7 @@ export const Home = () => {
             {/* Patient Information Form Section */}
 
             <div
-              className="grid grid-cols-5  gap-4 
+              className="grid md:grid-cols-5  gap-4 
                      px-4">
               <div className="flex flex-col">
                 <label className="text-sm font-medium text-gray-700">Patient Name:</label>

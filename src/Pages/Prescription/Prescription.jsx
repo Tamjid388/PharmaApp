@@ -14,9 +14,9 @@ export const Prescription = () => {
                 <div>
 
                 </div>
-                <div className='flex gap-4'>
+                <div className='flex gap-4 flex-col md:flex-row'>
                     {/*  */}
-                    <aside className='w-2/5 shadow-md p-4 rounded-lg space-y-7'>
+                    <aside className='md:w-2/5 shadow-md p-4 rounded-lg space-y-7'>
                         <div className=''>
                             <h3 className='font-semibold text-gray-800 text-lg mb-1'>Symptoms:</h3>
                             <ul className='list-decimal list-inside 
