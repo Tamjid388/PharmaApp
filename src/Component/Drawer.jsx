@@ -40,7 +40,7 @@ export const Drawer = () => {
         <Link to='/patientallrecords'>Patient All Records </Link>
       </li>
        <li>
-        <Link to='/test'>Sign Out</Link>
+        <Link to='/signin'>Sign Out</Link>
       </li>
     </ul>
   </div>
