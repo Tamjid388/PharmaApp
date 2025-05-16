@@ -11,10 +11,10 @@ Live Demo: [https://pharma-app.netlify.app/](https://pharma-app.netlify.app/)
 
 - **React 19**  
 - **React Router 7**  
-- **Tailwind CSS 4**  
+- **Tailwind CSS 5**  
 - **DaisyUI**  
 - **React Icons**  
-- **LightGallery** (used in reports or images)
+- **LightGallery** (used in reports )
 
 ---
 
