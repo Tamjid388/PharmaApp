@@ -9,8 +9,7 @@ import {
 } from "react-router";
 import { SignIn } from './Pages/Auth/SignIn';
 import { Home } from './Pages/Home/Home';
-import { Demo } from './Pages/Demo/Demo';
-import { Demo2 } from './Pages/Demo/Demo2';
+
 import { MainLayout } from './Layout/MainLayout';
 import { AddMedicine } from './Pages/AddMedicine/AddMedicine';
 import { PatientAllRecords } from './Pages/PatientALLRecords/PatientAllRecords';
@@ -31,7 +30,7 @@ const router = createBrowserRouter([
     children:[
       {
        path:"/",
-        element:<Home/> //Patient Prescription
+        element:<Home/>
 
       },
     

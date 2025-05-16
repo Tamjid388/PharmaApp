@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 export const SignUp = () => {
   return (
@@ -49,7 +50,7 @@ export const SignUp = () => {
             <a href="#">Forgot password?</a>
             <p style={{ marginTop: "1rem" }}>
                 Don't have an account? 
-                <a href="#">Sign up</a>
+                <Link to={'/signin'}>Sign In</Link>
             </p>
         </div>
     </div>
