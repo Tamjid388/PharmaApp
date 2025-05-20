@@ -5,13 +5,16 @@ export const Symptoms = () => {
   const [input, setInput] = useState('');
   const [suggestions, setSuggestions] = useState([]);
   const [allSymptoms] = useState([
-    'Fever',
-    'Cough',
-    'Headache',
-    'Fatigue',
-    'Nausea',
-    'Sore throat',
-    'Dizziness',
+   'Fatigue',
+  'Headaches',
+  'Joint pain',
+  'Fever',
+  'Nausea',
+  'Dizziness',
+  'Sore throat',
+  'Cough',
+  'Shortness of breath',
+  'Chest pain',
   ]);
 
  const handleChange = (e) => {
@@ -43,11 +46,11 @@ export const Symptoms = () => {
     if (filteredMatches.length > 0) {
       setSuggestions(filteredMatches);
     } else {
-      // Otherwise, show all remaining (non-selected) suggestions
+    
       setSuggestions(matches);
     }
   } else {
-    // If nothing typed, show all remaining (non-selected) suggestions
+   
     setSuggestions(matches);
   }
 };
@@ -61,12 +64,7 @@ export const Symptoms = () => {
     setSuggestions([]);
   };
 
-  const handleKeyDown = (e) => {
-    if (e.key === 'Enter' && suggestions.length > 0) {
-      e.preventDefault();
-      handleSuggestionClick(suggestions[0]);
-    }
-  };
+
   return (
     <div>
           <h3 className='font-semibold text-gray-800 text-lg mb-1'>Symptoms:</h3>
@@ -77,7 +75,7 @@ export const Symptoms = () => {
                 placeholder="Enter symptoms here..."
                  value={input}
         onChange={handleChange}
-        onKeyDown={handleKeyDown}
+     
               >
                 
               </textarea>
