@@ -5,6 +5,7 @@ import { DoctorProfile } from '../../Component/DoctorProfile'
 import { Link } from 'react-router'
 import { FaPlus, FaPrescription } from 'react-icons/fa'
 import { RxCross1 } from 'react-icons/rx'
+import { Symptoms } from '../../Component/Symptoms'
 const allMedicines = ['Napa 500mg', 'Paracetamol 650mg',
   'Amoxiclillin 500mg', 'Cloacard 100mg', 'Metformin', 'Ace', 'Omeprazole'];
 export const Home = () => {
@@ -60,7 +61,7 @@ export const Home = () => {
         <div className='flex gap-4 flex-col md:flex-row'>
           {/*  */}
           <aside className='md:w-2/5 shadow-md p-4 rounded-lg space-y-7'>
-            <div className=''>
+            {/* <div className=''>
               <h3 className='font-semibold text-gray-800 text-lg mb-1'>Symptoms:</h3>
 
               <textarea
@@ -68,7 +69,8 @@ export const Home = () => {
                 rows="4"
                 placeholder="Enter symptoms here..."
               ></textarea>
-            </div>
+            </div> */}
+            <Symptoms/>
             <div >
               <h3 className='font-semibold text-gray-800 text-lg mb-1'>Tests:</h3>
 
